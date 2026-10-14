@@ -1,0 +1,322 @@
+{
+  "version": "7.0",
+  "nodes": [
+    {
+      "id": 1,
+      "type": "start",
+      "text": "Start",
+      "x": 16,
+      "y": 27,
+      "w": 150,
+      "h": 58
+    },
+    {
+      "id": 2,
+      "type": "input",
+      "text": "digit1; digit2; digit3",
+      "x": 190,
+      "y": 20,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 3,
+      "type": "process",
+      "text": "pelacak_awal=digit1*digit3",
+      "x": 410,
+      "y": 22,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 5,
+      "type": "output",
+      "text": "pelacak_awal",
+      "x": 620,
+      "y": 25,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 6,
+      "type": "decision",
+      "text": "digit2%2",
+      "x": 882,
+      "y": 38,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 7,
+      "type": "process",
+      "text": "pelacak1=pelacak_awal+25",
+      "x": 1087,
+      "y": 11,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 8,
+      "type": "process",
+      "text": "pelacak1=pelacak_awal-digit2",
+      "x": 851,
+      "y": 238,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 9,
+      "type": "output",
+      "text": "pelacak1",
+      "x": 1114,
+      "y": 223,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 11,
+      "type": "decision",
+      "text": "pelacak1 %3==0",
+      "x": 1149,
+      "y": 344,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 12,
+      "type": "process",
+      "text": "nilai_akhir=pelacak1 /3",
+      "x": 1120,
+      "y": 532,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 13,
+      "type": "process",
+      "text": "nilai_akhir=pelacak1*2",
+      "x": 854,
+      "y": 372,
+      "w": 180,
+      "h": 66
+    },
+    {
+      "id": 14,
+      "type": "output",
+      "text": "nilai_akhir",
+      "x": 849,
+      "y": 535,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 15,
+      "type": "decision",
+      "text": "nilai_akhir>=50",
+      "x": 640,
+      "y": 509,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 18,
+      "type": "output",
+      "text": "\"Kategori A\"",
+      "x": 50,
+      "y": 891,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 19,
+      "type": "decision",
+      "text": "nilai_akhir>20",
+      "x": 794,
+      "y": 705,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 20,
+      "type": "output",
+      "text": "\"Kategori B\"",
+      "x": 494,
+      "y": 731,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 21,
+      "type": "output",
+      "text": "\"Password Ditolak\"",
+      "x": 987,
+      "y": 733,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 23,
+      "type": "decision",
+      "text": "nilai_akhir%2==0",
+      "x": 752,
+      "y": 990,
+      "w": 122,
+      "h": 122
+    },
+    {
+      "id": 24,
+      "type": "output",
+      "text": "\"Siklus Ganjil\"",
+      "x": 981,
+      "y": 1017,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 25,
+      "type": "output",
+      "text": "\"Siklus Genap\"",
+      "x": 446,
+      "y": 1113,
+      "w": 190,
+      "h": 70
+    },
+    {
+      "id": 26,
+      "type": "end",
+      "text": "End",
+      "x": 929,
+      "y": 1188,
+      "w": 150,
+      "h": 58
+    }
+  ],
+  "edges": [
+    {
+      "from": 1,
+      "to": 2,
+      "branch": null
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "branch": null
+    },
+    {
+      "from": 3,
+      "to": 5,
+      "branch": null
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "branch": null
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "branch": "true"
+    },
+    {
+      "from": 6,
+      "to": 8,
+      "branch": "false"
+    },
+    {
+      "from": 7,
+      "to": 9,
+      "branch": null
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "branch": null
+    },
+    {
+      "from": 9,
+      "to": 11,
+      "branch": null
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "branch": "true"
+    },
+    {
+      "from": 11,
+      "to": 13,
+      "branch": "false"
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "branch": null
+    },
+    {
+      "from": 12,
+      "to": 14,
+      "branch": null
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "branch": null
+    },
+    {
+      "from": 15,
+      "to": 18,
+      "branch": "true"
+    },
+    {
+      "from": 15,
+      "to": 19,
+      "branch": "false"
+    },
+    {
+      "from": 19,
+      "to": 20,
+      "branch": "true"
+    },
+    {
+      "from": 19,
+      "to": 21,
+      "branch": "false"
+    },
+    {
+      "from": 21,
+      "to": 23,
+      "branch": null
+    },
+    {
+      "from": 20,
+      "to": 23,
+      "branch": null
+    },
+    {
+      "from": 23,
+      "to": 24,
+      "branch": "false"
+    },
+    {
+      "from": 23,
+      "to": 25,
+      "branch": "true"
+    },
+    {
+      "from": 24,
+      "to": 26,
+      "branch": null
+    },
+    {
+      "from": 25,
+      "to": 26,
+      "branch": null
+    },
+    {
+      "from": 18,
+      "to": 23,
+      "branch": null
+    }
+  ],
+  "nextId": 28
+}
